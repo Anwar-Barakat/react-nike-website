@@ -1,12 +1,12 @@
-import ReviewCart from "../components/Reviewcart";
 import { reviews } from "../constants";
+import ReviewCart from "../components/ReviewCart";
 
 const CustomerReviews = () => {
   return (
     <section className="max-container">
       <h3 className="font-palanquin text-center font-bold text-4xl">
         What Our
-        <spn className="text-coral-red"> Customers </spn>
+        <span className="text-coral-red"> Customers </span>
         Say?
       </h3>
       <p className="info-text m-auto mt-4 max-w-lg text-center leading-normal">

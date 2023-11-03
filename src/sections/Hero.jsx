@@ -17,9 +17,9 @@ const Hero = () => {
           Our Summer Collection
         </p>
         <h1 className="mt-10 font-palanquin text-8xl max-sm:text-[72px] max-sm:leading font-bold">
-          <spam className="xl:bg-white xl:whitespace-nowrap pr-10 relative z-10">
+          <span className="xl:bg-white xl:whitespace-nowrap pr-10 relative z-10">
             The New Arrival
-          </spam>
+          </span>
           <br />
           <span className="text-coral-red inline-block mt-3">Nike </span> Shoes
         </h1>
@@ -29,8 +29,8 @@ const Hero = () => {
         </p>
         <Button label="Shop Now" iconURL={arrowRight} />
         <div className="flex justify-start items-start flex-wrap w-full mt-20 gap-16">
-          {statistics.map((stat) => (
-            <div key={stat.label}>
+          {statistics.map((stat, index) => (
+            <div key={index}>
               <p className="text-4xl font-palanquin font-bold ">{stat.value}</p>
               <p className="leading-7 font-montserrat text-slate-gray">
                 {stat.label}
@@ -48,8 +48,8 @@ const Hero = () => {
           className="object-contain relative z-10"
         />
         <div className="flex flex-row sm:gap-6 absolute -bottom-20">
-          {shoes.map((shoe) => (
-            <div key={shoe}>
+          {shoes.map((shoe, index) => (
+            <div key={index}>
               <ShowCard
                 imgURL={shoe}
                 changeBigShoeImage={(shoe) => {
